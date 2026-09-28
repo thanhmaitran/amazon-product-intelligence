@@ -1,0 +1,30 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- Environments ---
+.venv/
+venv/
+env/
+
+# --- Data (raw/processed data can be large; keep repo lightweight) ---
+data/processed/*.csv
+!data/processed/.gitkeep
+
+# --- Outputs (regenerable artifacts) ---
+outputs/figures/*.png
+outputs/models/*.pkl
+outputs/models/*.joblib
+outputs/reports/*.html
+!outputs/**/.gitkeep
+
+# --- OS / Editor ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
