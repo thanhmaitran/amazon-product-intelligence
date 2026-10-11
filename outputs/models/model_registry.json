@@ -1,0 +1,151 @@
+{
+  "created_utc": "2026-10-11T13:01:01+00:00",
+  "sklearn_version": "1.8.0",
+  "features": {
+    "numeric": [
+      "discount_percentage",
+      "discounted_price",
+      "review_length",
+      "title_length",
+      "description_length",
+      "rating_count"
+    ],
+    "categorical": [
+      "main_category"
+    ]
+  },
+  "excluded_features": {
+    "popularity_score": "leakage: derived from rating"
+  },
+  "classification": {
+    "target": "high_rated = rating >= 4.2",
+    "models": {
+      "Logistic Regression": {
+        "file": "classification_logistic_regression.joblib",
+        "size_kb": 1.9,
+        "metrics": {
+          "accuracy": 0.6194,
+          "precision": 0.5931,
+          "recall": 0.6277,
+          "f1": 0.6099,
+          "roc_auc": 0.6782
+        }
+      },
+      "Random Forest": {
+        "file": "classification_random_forest.joblib",
+        "size_kb": 3047.5,
+        "metrics": {
+          "accuracy": 0.692,
+          "precision": 0.7222,
+          "recall": 0.5693,
+          "f1": 0.6367,
+          "roc_auc": 0.7113
+        }
+      },
+      "Gradient Boosting": {
+        "file": "classification_gradient_boosting.joblib",
+        "size_kb": 40.9,
+        "metrics": {
+          "accuracy": 0.6298,
+          "precision": 0.621,
+          "recall": 0.562,
+          "f1": 0.59,
+          "roc_auc": 0.6521
+        }
+      }
+    },
+    "best_model": {
+      "name": "Random Forest",
+      "selected_by": "roc_auc"
+    },
+    "cv_metrics": {
+      "Logistic Regression": {
+        "roc_auc_mean": 0.6293,
+        "roc_auc_std": 0.0381,
+        "f1_mean": 0.5508,
+        "f1_std": 0.0223,
+        "accuracy_mean": 0.5949,
+        "accuracy_std": 0.0188
+      },
+      "Random Forest": {
+        "roc_auc_mean": 0.6938,
+        "roc_auc_std": 0.0308,
+        "f1_mean": 0.6072,
+        "f1_std": 0.0304,
+        "accuracy_mean": 0.6721,
+        "accuracy_std": 0.0241
+      },
+      "Gradient Boosting": {
+        "roc_auc_mean": 0.6485,
+        "roc_auc_std": 0.0374,
+        "f1_mean": 0.5509,
+        "f1_std": 0.0245,
+        "accuracy_mean": 0.6261,
+        "accuracy_std": 0.0268
+      }
+    }
+  },
+  "regression": {
+    "target": "rating",
+    "models": {
+      "Linear Regression": {
+        "file": "regression_linear_regression.joblib",
+        "size_kb": 1.9,
+        "metrics": {
+          "MAE": 0.1784,
+          "RMSE": 0.2362,
+          "R2": 0.1257
+        }
+      },
+      "Random Forest": {
+        "file": "regression_random_forest.joblib",
+        "size_kb": 4196.0,
+        "metrics": {
+          "MAE": 0.1764,
+          "RMSE": 0.2348,
+          "R2": 0.1361
+        }
+      },
+      "Gradient Boosting": {
+        "file": "regression_gradient_boosting.joblib",
+        "size_kb": 38.6,
+        "metrics": {
+          "MAE": 0.1859,
+          "RMSE": 0.2455,
+          "R2": 0.0558
+        }
+      }
+    },
+    "best_model": {
+      "name": "Random Forest",
+      "selected_by": "R2"
+    },
+    "cv_metrics": {
+      "Linear Regression": {
+        "R2_mean": 0.0803,
+        "R2_std": 0.0268,
+        "MAE_mean": 0.2093,
+        "MAE_std": 0.0048,
+        "RMSE_mean": 0.2827,
+        "RMSE_std": 0.013
+      },
+      "Random Forest": {
+        "R2_mean": 0.0926,
+        "R2_std": 0.0525,
+        "MAE_mean": 0.2023,
+        "MAE_std": 0.0077,
+        "RMSE_mean": 0.2807,
+        "RMSE_std": 0.0139
+      },
+      "Gradient Boosting": {
+        "R2_mean": 0.0348,
+        "R2_std": 0.0713,
+        "MAE_mean": 0.2091,
+        "MAE_std": 0.0056,
+        "RMSE_mean": 0.2892,
+        "RMSE_std": 0.0104
+      }
+    }
+  },
+  "evaluation": "holdout = GroupShuffleSplit 80/20 (variants of one listing never straddle the split); cv = 5-fold GroupKFold, mean/std"
+}
