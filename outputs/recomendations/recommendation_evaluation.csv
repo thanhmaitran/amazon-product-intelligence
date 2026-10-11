@@ -1,0 +1,5 @@
+k,category_precision,sub_category_precision,mean_similarity
+1,0.9637,0.9423,0.602
+3,0.9519,0.926,0.5035
+5,0.9411,0.9036,0.4454
+10,0.9207,0.8725,0.3693

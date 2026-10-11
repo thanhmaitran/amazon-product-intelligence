@@ -1,0 +1,33 @@
+{
+  "n_products": 1351,
+  "top_k": 10,
+  "n_pairs": 13510,
+  "mean_similarity_rank1": 0.602,
+  "evaluation": [
+    {
+      "k": 1,
+      "category_precision": 0.9637,
+      "sub_category_precision": 0.9423,
+      "mean_similarity": 0.602
+    },
+    {
+      "k": 3,
+      "category_precision": 0.9519,
+      "sub_category_precision": 0.926,
+      "mean_similarity": 0.5035
+    },
+    {
+      "k": 5,
+      "category_precision": 0.9411,
+      "sub_category_precision": 0.9036,
+      "mean_similarity": 0.4454
+    },
+    {
+      "k": 10,
+      "category_precision": 0.9207,
+      "sub_category_precision": 0.8725,
+      "mean_similarity": 0.3693
+    }
+  ],
+  "model_file": "/home/claude/amazon-product-intelligence/outputs/models/tfidf_recommender.joblib"
+}
