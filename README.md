@@ -4,7 +4,7 @@
 > exploratory analysis, statistical testing, NLP, sentiment analysis, machine learning,
 > a content-based recommendation system, and an interactive Streamlit dashboard.
 
-**Status:** ✅ Phases 0–8 complete (repo setup → dashboard). Phase 9 (this README + `docs/`) in progress.
+**Status:** ✅ All phases (0–9) complete — from repository setup and data processing to machine learning, recommendation, dashboard, and documentation.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -169,7 +169,7 @@ amazon-product-intelligence/
 ├── dashboard/
 │   └── streamlit_app.py
 ├── outputs/
-│   ├── figures/                27+ generated charts
+│   ├── figures/                33+ generated charts
 │   ├── reports/
 │   ├── models/
 │   └── recommendations/
