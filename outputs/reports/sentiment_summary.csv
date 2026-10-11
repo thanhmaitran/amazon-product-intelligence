@@ -1,0 +1,31 @@
+label,share,scope
+positive,0.9778,overall
+neutral,0.0089,overall
+negative,0.0133,overall
+positive,1.0,Car & Motorbike
+positive,1.0,Health & Personal Care
+positive,1.0,Office Products
+positive,1.0,Musical Instruments
+positive,1.0,Home Improvement
+positive,1.0,Toys & Games
+positive,0.992,Computers & Accessories
+positive,0.9796,Electronics
+positive,0.9621,Home & Kitchen
+neutral,0.0,Car & Motorbike
+neutral,0.0,Health & Personal Care
+neutral,0.0,Office Products
+neutral,0.0,Musical Instruments
+neutral,0.0,Home Improvement
+neutral,0.0,Toys & Games
+neutral,0.0027,Computers & Accessories
+neutral,0.0082,Electronics
+neutral,0.0156,Home & Kitchen
+negative,0.0,Car & Motorbike
+negative,0.0,Health & Personal Care
+negative,0.0,Office Products
+negative,0.0,Musical Instruments
+negative,0.0,Home Improvement
+negative,0.0,Toys & Games
+negative,0.0053,Computers & Accessories
+negative,0.0122,Electronics
+negative,0.0223,Home & Kitchen

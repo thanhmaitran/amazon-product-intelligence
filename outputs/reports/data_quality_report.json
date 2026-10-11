@@ -1,0 +1,31 @@
+{
+  "raw_rows": 1465,
+  "raw_columns": 16,
+  "duplicate_product_id_rows_removed": 114,
+  "clean_rows": 1351,
+  "raw_missing_values": {
+    "rating_count": 2
+  },
+  "clean_missing_values": {
+    "rating": 1,
+    "rating_count": 2
+  },
+  "price_range_inr": [
+    39.0,
+    77990.0
+  ],
+  "rating_range": [
+    2.0,
+    5.0
+  ],
+  "n_main_categories": 9,
+  "products_sharing_rating_and_rating_count_with_another": 257,
+  "note_shared_ratings": "Variants of one listing share rating/rating_count: summing rating_count double-counts, and ML splits must be group-aware.",
+  "categories_with_fewer_than_5_products": [
+    "Car & Motorbike",
+    "Health & Personal Care",
+    "Home Improvement",
+    "Musical Instruments",
+    "Toys & Games"
+  ]
+}

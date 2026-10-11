@@ -1,0 +1,7 @@
+,rating,rating_count,discounted_price,discount_percentage,review_length,popularity_score
+rating,1.0,0.0975,0.1264,-0.1618,0.0804,0.4435
+rating_count,0.0975,1.0,-0.0241,0.0039,0.1569,0.5446
+discounted_price,0.1264,-0.0241,1.0,-0.2365,0.3261,0.1094
+discount_percentage,-0.1618,0.0039,-0.2365,1.0,-0.1249,-0.1653
+review_length,0.0804,0.1569,0.3261,-0.1249,1.0,0.2541
+popularity_score,0.4435,0.5446,0.1094,-0.1653,0.2541,1.0
