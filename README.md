@@ -94,21 +94,21 @@ rating comparisons in `docs/results.md`).
 
 ```
                  ┌────────────────────┐
-                 │  data/raw/          │
-                 │  amazon.csv          │
-                 └──────────┬──────────┘
+                 │  data/raw/         │
+                 │  amazon.csv        │
+                 └──────────┬─────────┘
                             │  src/preprocessing.py
                             ▼
                  ┌────────────────────┐
-                 │  cleaned_products    │  ← dedup, price/rating parsing,
-                 │  .csv                 │    category split, text cleaning
-                 └──────────┬──────────┘
+                 │  cleaned_products  │  ← dedup, price/rating parsing,
+                 │  .csv              │    category split, text cleaning
+                 └──────────┬─────────┘
                             │  src/feature_engineering.py
                             ▼
                  ┌────────────────────┐
-                 │  products_features   │  ← discount_amount, *_length,
-                 │  .csv                  │    popularity_score, buckets
-                 └──────────┬──────────┘
+                 │  products_features │  ← discount_amount, *_length,
+                 │  .csv              │    popularity_score, buckets
+                 └──────────┬─────────┘
                             │
         ┌────────┬─────────┼─────────┬─────────┬─────────┐
         ▼        ▼         ▼         ▼         ▼         ▼
@@ -119,14 +119,14 @@ rating comparisons in `docs/results.md`).
                             │
                             ▼
                  ┌────────────────────┐
-                 │  outputs/figures/,    │  ← 27+ charts, model metrics,
-                 │  models/, reports/    │    recommendation tables
-                 └──────────┬──────────┘
+                 │  outputs/figures/, │  ← 27+ charts, model metrics,
+                 │  models/, reports/ │    recommendation tables
+                 └──────────┬─────────┘
                             │
                             ▼
                  ┌────────────────────┐
-                 │  dashboard/           │  ← Streamlit app: 3 interactive
-                 │  streamlit_app.py     │    pages over the same src/ modules
+                 │  dashboard/        │  ← Streamlit app: 3 interactive
+                 │  streamlit_app.py  │    pages over the same src/ modules
                  └────────────────────┘
 ```
 
